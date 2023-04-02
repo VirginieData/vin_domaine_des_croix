@@ -5,7 +5,7 @@ from streamlit_extras.app_logo import add_logo
 add_logo("https://res.cloudinary.com/wildcodeschool/image/upload/c_fill,h_50/v1/static/irjoy97aq0eol8bf6959")
 
 
-st.title("L'analyse préliminaire a été effectuée grace à l'outil Power BI")
+st.title("L'analyse préliminaire a été effectuée grâce à l'outil Power BI")
 st.write("Vous pourrez retrouver prochainement le rapport interactif en ligne")
 
 
