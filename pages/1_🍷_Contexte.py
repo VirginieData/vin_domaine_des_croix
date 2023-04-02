@@ -6,14 +6,14 @@ add_logo("https://res.cloudinary.com/wildcodeschool/image/upload/c_fill,h_50/v1/
 
 
 # Contexte Domaine des Croix
-# adresse
-# photo
-# quelques infos rapides
+
 st.image("https://wineguildeducation.org/wp-content/uploads/2020/03/domaine-de-croix.jpg")
 st.image("https://zupimages.net/up/23/13/q7a4.png")
 st.write("")
 st.write("David Croix dispose de belles parcelles sur les appellations Beaune, Beaune 1er Cru, Aloxe-Corton, Savigny-les-Beaune et les grands crus Corton et Corton-Charlemagne, qu’il travaille avec un bon sens paysan profond, dans une logique proche de celle de l’agriculture biologique, quoique sans certification. Aucun produit de synthèse ne trouve place dans ses vignes. David Croix cherche avant tout à produire de vins souples, élégants tout en n’étant pas dénués de matière. Il n’hésite pas à égrapper assez fortement ses raisins et à piger beaucoup ses rouges afin de « remplir le vin » et de lui apporter de l’onctuosité. Ce sont donc à des pinots charmeurs en diable que nous avons affaire, des vins accessibles dès leur jeunesse, élégants et très faciles à boire malgré leur belle complexité. Un petit domaine qui n’a rien à envier aux grands noms !")
 st.caption('propos de "La cave de Bacchus"')
+
+
 # Ventes aux US
 
 st.title('Le marché des vins aux Etats-Unis')
