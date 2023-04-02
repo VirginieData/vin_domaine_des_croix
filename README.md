@@ -53,8 +53,8 @@ MACHINE LEARNING
 Step by step : 
 * utilisation des colonnes millésime et note
 * ajout des colonnes pays et cépages en limitant au 10 plus présents dans le df
-* ajout de la colonne taster_name (non retenu)
-* ajout de la colonne province (non retenu)
+* ajout de la colonne taster_name
+* ajout de la colonne province
 * Prédiction des prix des bouteilles de vin du Domaine des Croix 
 
 
@@ -65,6 +65,6 @@ MISE EN FORME SUR STREAMLIT
 * Accueil
 * Contexte avec quelques éléments sur le domaine des Croix et sur la vente aux Etats Unis
 * Analyse des données : lien vers le rapport Power BI (captures d’écran pour le moment)
-* Machine Learning : possibilités de tests de 3 modèles sur notre df en faisant bouger quelques hyperparamètres 
+* Machine Learning : possibilités de tests de 2 modèles sur notre df en faisant bouger quelques hyperparamètres 
 * Prix des bouteilles : l’utilisateur choisit un vin, cela affiche son cépage, sa description, sa note et le prix conseillé (prédit par le modèle)
 *Modèle retenu : RandomForestRegressor(n_estimators = 1000, max_depth= 15, min_samples_leaf= 1, min_samples_split= 10, random_state=42)*
