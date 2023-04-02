@@ -22,7 +22,7 @@ st.title('Prédire le prix du vin')
 st.write("""
 # Explorons différents modèles pour choisir le plus adapté
 """)
-
+st.caption("C'est un peu long... mais ça fonctionne au bout d'un moment")
 
 modele_name = st.sidebar.selectbox(
     'Selectionnez un modèle',
