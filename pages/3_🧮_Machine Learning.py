@@ -109,15 +109,15 @@ y = df_wine_ml['price']
 X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=42)
 
 
-# ## Standardisation des données
+## Standardisation des données
 
-# # créer scaler
-# scaler = StandardScaler()
-# # entrainer scaler sur X_train
-# scaler.fit(X_train)
-# # transformer données
-# X_train_scaled = scaler.transform(X_train)
-# X_test_scaled = scaler.transform(X_test)
+# créer scaler
+scaler = StandardScaler()
+# entrainer scaler sur X_train
+scaler.fit(X_train)
+# transformer données
+X_train_scaled = scaler.transform(X_train)
+X_test_scaled = scaler.transform(X_test)
 
 
 
