@@ -11,10 +11,10 @@ from sklearn.neighbors import KNeighborsRegressor
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import r2_score
 from sklearn.metrics import mean_squared_error
-from streamlit_extras.app_logo import add_logo
+#from streamlit_extras.app_logo import add_logo
 
 # création logo en haut sidebar
-add_logo("https://res.cloudinary.com/wildcodeschool/image/upload/c_fill,h_50/v1/static/irjoy97aq0eol8bf6959")
+#add_logo("https://res.cloudinary.com/wildcodeschool/image/upload/c_fill,h_50/v1/static/irjoy97aq0eol8bf6959")
 
 
 st.title('Prédire le prix du vin')
