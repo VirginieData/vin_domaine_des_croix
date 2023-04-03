@@ -91,33 +91,33 @@ X_test_scaled = scaler.transform(X_test)
 
 
 
-## Fonction paramètres des différents modèles
-def add_parameter_ui(mod_name):
-    params = dict()
-    if  modele_name == 'KNN':
-        K = st.sidebar.slider('K', 1, 20)
-        params['K'] = K
-    else:
-        max_depth = st.sidebar.slider('max_depth', 2, 20)
-        params['max_depth'] = max_depth
-        n_estimators = st.sidebar.slider('n_estimators', 50, 500)
-        params['n_estimators'] = n_estimators
-    return params
+# ## Fonction paramètres des différents modèles
+# def add_parameter_ui(mod_name):
+#     params = dict()
+#     if  modele_name == 'KNN':
+#         K = st.sidebar.slider('K', 1, 20)
+#         params['K'] = K
+#     else:
+#         max_depth = st.sidebar.slider('max_depth', 2, 20)
+#         params['max_depth'] = max_depth
+#         n_estimators = st.sidebar.slider('n_estimators', 50, 500)
+#         params['n_estimators'] = n_estimators
+#     return params
 
-params = add_parameter_ui(modele_name)
+# params = add_parameter_ui(modele_name)
 
 
-## fonction qui définie le modèle avec ses paramètres
-def get_modele(mod_name, params):
-    mod = None
-#     if mod_name == 'KNN':
-#         mod = KNeighborsRegressor(n_neighbors=params['K'])
-    if mod_name == 'Random Forest' :
-        mod = RandomForestRegressor(n_estimators=params['n_estimators'], 
-            max_depth=params['max_depth'], random_state=42)
-    return mod
+# ## fonction qui définie le modèle avec ses paramètres
+# def get_modele(mod_name, params):
+#     mod = None
+#      if mod_name == 'KNN':
+#          mod = KNeighborsRegressor(n_neighbors=params['K'])
+#     else:
+#         mod = RandomForestRegressor(n_estimators=params['n_estimators'], 
+#             max_depth=params['max_depth'], random_state=42)
+#     return mod
 
-mod = get_modele(modele_name, params)
+mod = RandomForestRegressor(n_estimators = 1000, max_depth= 15, min_samples_leaf= 1, min_samples_split= 10, random_state=42)
 
 mod.fit(X_train_scaled, y_train)
 
