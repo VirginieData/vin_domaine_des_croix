@@ -69,7 +69,7 @@ df_encod = pd.DataFrame(OHencod.transform(col_a_encoder),
                     index=df_wine_ml.index)
 # on rassemble nos colonnes encodées avec celles qui étaient déjà des colonnes numériques
 DF_wine_encod = pd.concat([df_wine_ml[['points', 'price', 'millesime']], df_encod], axis=1)
-DF_wine_encod
+
 
 # ## Définition X et y
 # X = DF_wine_encod.drop('price', axis=1)
