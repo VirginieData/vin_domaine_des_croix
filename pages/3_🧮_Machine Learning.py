@@ -55,21 +55,21 @@ modele_name = st.sidebar.selectbox(
 # ## Import du df_wine modifié par mes soins
 df_wine_ml = pd.read_csv("https://raw.githubusercontent.com/VirginieData/vin_domaine_des_croix/main/df_wine_ml.csv")
 
-# ## Encodage
+## Encodage
 
-# # on choisit les colonnes qui seront encodées
-# col_a_encoder = df_wine_ml.select_dtypes(exclude='number')
-# # on encode les données concernées
-# OHencod = OneHotEncoder(sparse=False, drop="if_binary")
-# OHencod.fit(col_a_encoder)
-# OHencod.transform(col_a_encoder)
-# # on les remet dans un DF
-# df_encod = pd.DataFrame(OHencod.transform(col_a_encoder),
-#                     columns=OHencod.get_feature_names_out(),
-#                     index=df_wine_ml.index)
-# # on rassemble nos colonnes encodées avec celles qui étaient déjà des colonnes numériques
-# DF_wine_encod = pd.concat([df_wine_ml[['points', 'price', 'millesime']], df_encod], axis=1)
-
+# on choisit les colonnes qui seront encodées
+col_a_encoder = df_wine_ml.select_dtypes(exclude='number')
+# on encode les données concernées
+OHencod = OneHotEncoder(sparse=False, drop="if_binary")
+OHencod.fit(col_a_encoder)
+OHencod.transform(col_a_encoder)
+# on les remet dans un DF
+df_encod = pd.DataFrame(OHencod.transform(col_a_encoder),
+                    columns=OHencod.get_feature_names_out(),
+                    index=df_wine_ml.index)
+# on rassemble nos colonnes encodées avec celles qui étaient déjà des colonnes numériques
+DF_wine_encod = pd.concat([df_wine_ml[['points', 'price', 'millesime']], df_encod], axis=1)
+DF_wine_encod
 
 # ## Définition X et y
 # X = DF_wine_encod.drop('price', axis=1)
