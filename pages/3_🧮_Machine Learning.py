@@ -101,12 +101,12 @@ df_encod = pd.DataFrame(OHencod.transform(col_a_encoder),
 DF_wine_encod = pd.concat([df_wine_ml[['points', 'price', 'millesime']], df_encod], axis=1)
 
 
-# ## Définition X et y
-# X = DF_wine_encod.drop('price', axis=1)
-# y = df_wine_ml['price']
+## Définition X et y
+X = DF_wine_encod.drop('price', axis=1)
+y = df_wine_ml['price']
 
-# ## Train test split
-# X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=42)
+## Train test split
+X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=42)
 
 
 # ## Standardisation des données
