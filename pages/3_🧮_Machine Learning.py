@@ -29,6 +29,36 @@ modele_name = st.sidebar.selectbox(
      ('KNN', 'Random Forest')
  )
 
+import psutil
+
+def get_size(bytes, suffix="B"):
+    """
+    Scale bytes to its proper format
+    e.g:
+    1253656 => '1.20MB'
+    1253656678 => '1.17GB'
+    """
+    factor = 1024
+    for unit in ["", "K", "M", "G", "T", "P"]:
+        if bytes < factor:
+            return f"{bytes:.2f}{unit}{suffix}"
+        bytes /= factor
+
+# Obtenez l'utilisation du disque
+disk = psutil.disk_usage('/')
+total = get_size(disk.total)
+used = get_size(disk.used)
+free = get_size(disk.free)
+percent = disk.percent
+
+# Affichez les informations sur l'utilisation du disque
+st.write("### Utilisation du disque")
+st.write(f"Total: {total}")
+st.write(f"Utilisé: {used} ({percent}%)")
+st.write(f"Libre: {free}")
+
+
+
 #############################################################################
 # ## Préparation du df utilisé pour le ML
 
