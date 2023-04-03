@@ -51,8 +51,9 @@ modele_name = st.sidebar.selectbox(
 # # on supprime les lignes avec des valeurs manquantes
 # df_wine_ml.dropna(inplace=True)
 ####################################################################################
+
 # ## Import du df_wine modifié par mes soins
-# df_wine_ml = pd.read_csv("https://raw.githubusercontent.com/VirginieData/vin_domaine_des_croix/main/df_wine_ml.csv")
+df_wine_ml = pd.read_csv("https://raw.githubusercontent.com/VirginieData/vin_domaine_des_croix/main/df_wine_ml.csv")
 
 # ## Encodage
 
