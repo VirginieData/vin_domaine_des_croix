@@ -24,10 +24,10 @@ st.write("""
 """)
 st.caption("C'est un peu long... mais ça fonctionne au bout d'un moment")
 
-# modele_name = st.sidebar.selectbox(
-#     'Selectionnez un modèle',
-#     ('KNN', 'Random Forest')
-# )
+ modele_name = st.sidebar.selectbox(
+     'Selectionnez un modèle',
+     ('KNN', 'Random Forest')
+ )
 
 #############################################################################
 # ## Préparation du df utilisé pour le ML
