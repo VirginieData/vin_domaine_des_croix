@@ -1,8 +1,8 @@
 import streamlit as st
-#from streamlit_extras.app_logo import add_logo
+from streamlit_extras.app_logo import add_logo
 
 # création logo en haut sidebar
-#add_logo("https://res.cloudinary.com/wildcodeschool/image/upload/c_fill,h_50/v1/static/irjoy97aq0eol8bf6959")
+add_logo("https://res.cloudinary.com/wildcodeschool/image/upload/c_fill,h_50/v1/static/irjoy97aq0eol8bf6959")
 
 
 # Contexte Domaine des Croix
