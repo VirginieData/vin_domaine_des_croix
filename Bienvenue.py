@@ -14,11 +14,11 @@ st.title("Bienvenue à bord")
 #add_logo("https://res.cloudinary.com/wildcodeschool/image/upload/c_fill,h_50/v1/static/irjoy97aq0eol8bf6959")
 
 # création animation verres de vins
-#rain(
- #   emoji="🍷",
-  #  font_size=54,
-   # falling_speed=5,
-    #animation_length="infinite",)
+rain(
+   emoji="🍷",
+   font_size=54,
+   falling_speed=5,
+    animation_length="infinite",)
 
 # Page d'accueil avec logo Domaine de Croix
 st.image("https://wineguildeducation.org/wp-content/uploads/2020/03/domaine-de-croix.jpg")
