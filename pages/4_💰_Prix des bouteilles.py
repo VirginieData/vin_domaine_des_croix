@@ -2,18 +2,17 @@ import streamlit as st
 from streamlit_extras.app_logo import add_logo
 import pandas as pd
 import numpy as np
-import re 
+# import re 
 
 
-from sklearn.preprocessing import OneHotEncoder
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler
-from sklearn.ensemble import RandomForestRegressor
-from sklearn.metrics import r2_score
-
+# from sklearn.preprocessing import OneHotEncoder
+# from sklearn.model_selection import train_test_split
+# from sklearn.preprocessing import StandardScaler
+# from sklearn.ensemble import RandomForestRegressor
+# from sklearn.metrics import r2_score
 
 # création logo en haut sidebar
-add_logo("https://res.cloudinary.com/wildcodeschool/image/upload/c_fill,h_50/v1/static/irjoy97aq0eol8bf6959")
+# add_logo("https://res.cloudinary.com/wildcodeschool/image/upload/c_fill,h_50/v1/static/irjoy97aq0eol8bf6959")
 
 
 # ## Import du df_wine mordifié par mes soins
