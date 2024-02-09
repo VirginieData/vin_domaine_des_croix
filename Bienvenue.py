@@ -11,7 +11,7 @@ st.title("Bienvenue à bord")
 # st.sidebar.success("Select a page above.")
 
 # création logo en haut sidebar
-add_logo("https://res.cloudinary.com/wildcodeschool/image/upload/c_fill,h_50/v1/static/irjoy97aq0eol8bf6959")
+# add_logo("https://res.cloudinary.com/wildcodeschool/image/upload/c_fill,h_50/v1/static/irjoy97aq0eol8bf6959")
 
 # création animation verres de vins
 rain(
